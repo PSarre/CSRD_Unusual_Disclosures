@@ -4,14 +4,29 @@ uvicorn[standard]==0.24.0
 pydantic==2.5.0
 
 # Data processing
-numpy==1.26.0
+numpy==1.26.4
 pandas==2.1.0
 scikit-learn==1.3.0
 
 # ML/AI
+#torch==2.1.0                    # IT IS BEST TO FIRST INSTALL TORCH VIA PYTORCH DIRECTLY TO ADAPT TO YOUR HARDWARE
+
+## Extra repository torch
+
+### CUDA
+#--extra-index-url https://download.pytorch.org/whl/cu121
+
+### ROCm
+--extra-index-url https://download.pytorch.org/whl/rocm5.6
+
 torch==2.1.0
+torchvision==0.16.0
+
+## Transformers and LLM APIs 
+huggingface_hub==0.25.0
 transformers==4.36.0
 sentence-transformers==2.2.2
+httpx==0.27.0
 openai==1.3.0
 
 # Document processing
@@ -26,7 +41,7 @@ python-dotenv==1.0.0
 
 # Utilities
 loguru==0.7.2
-regex==2023.10.0
+regex
 
 # Configuration (optional - if using hydra)
 # hydra-core==1.3.2

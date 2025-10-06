@@ -217,6 +217,7 @@ class DisclosureInferenceEngine:
             # Call LLM for analysis
             response = self.llm_client.chat.completions.create(
                 model=self.config.llm_model,
+                response_format={"type": "json_object"},
                 messages=[
                     {"role": "system", "content": "You are a professional ESG compliance analysis expert. Please analyze metric disclosure status based on the provided information."},
                     {"role": "user", "content": prompt}

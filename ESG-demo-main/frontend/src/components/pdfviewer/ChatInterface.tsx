@@ -26,7 +26,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
     if (inputMessage.trim()) {
       setIsLoading(true);
       try {
-        await onSendMessage(inputMessage);
+        onSendMessage(inputMessage);
         setInputMessage("");
       } catch (error) {
         console.error('Failed to send message:', error);

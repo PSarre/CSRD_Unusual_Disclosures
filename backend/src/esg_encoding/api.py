@@ -1388,12 +1388,16 @@ async def get_report_by_file_id(file_id: str):
         backend_dir = Path(__file__).parent.parent.parent
         outputs_dir = backend_dir / "outputs"
 
+        print(f"output directory: {str(outputs_dir)}")
+
         if not outputs_dir.exists():
+            print("No report directory found")
             raise HTTPException(status_code=404, detail="No reports directory found")
 
         # First, load the JSON assessment file to get the report_id
         json_file = outputs_dir / f"{file_id}_compliance.json"
         if not json_file.exists():
+            print(f"No assessment JSON found for file {file_id}")
             raise HTTPException(status_code=404, detail=f"No assessment found for file {file_id}")
 
         # Read JSON to get report_id
@@ -1403,11 +1407,13 @@ async def get_report_by_file_id(file_id: str):
 
         report_id = assessment_data.get('report_id')
         if not report_id:
+            print(f"Report ID: {report_id} not found in assessment data")
             raise HTTPException(status_code=404, detail="Report ID not found in assessment data")
 
         # Now load the markdown report using the report_id
         report_file = outputs_dir / f"compliance_report_{report_id}.md"
         if not report_file.exists():
+            print(f"Report {report_id} .md file not found")
             raise HTTPException(status_code=404, detail=f"Report file not found for report_id {report_id}")
 
         # Read the markdown content
