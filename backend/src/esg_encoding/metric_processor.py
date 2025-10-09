@@ -293,6 +293,10 @@ class MetricProcessor:
                 "Investment Banking & Brokerage": "investment_banking_brokerage.json",
                 "Commercial Banks": "commercial_banks.json",
                 "Asset Management & Custody Activities": "asset_management_custody.json"
+
+                # P&G Consumers metrics (patch)
+
+                # BMW Transportation metrics (patch)
             }
             
             if semi_industry not in industry_file_mapping:

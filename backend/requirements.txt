@@ -14,10 +14,10 @@ scikit-learn==1.3.0
 ## Extra repository torch
 
 ### CUDA
-#--extra-index-url https://download.pytorch.org/whl/cu121
+--extra-index-url https://download.pytorch.org/whl/cu121
 
 ### ROCm
---extra-index-url https://download.pytorch.org/whl/rocm5.6
+#--extra-index-url https://download.pytorch.org/whl/rocm5.6
 
 torch==2.1.0
 torchvision==0.16.0
