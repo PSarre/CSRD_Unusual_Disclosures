@@ -292,9 +292,12 @@ class MetricProcessor:
                 # MCG Financials metrics (now in sasb_metrics directory)
                 "Investment Banking & Brokerage": "investment_banking_brokerage.json",
                 "Commercial Banks": "commercial_banks.json",
-                "Asset Management & Custody Activities": "asset_management_custody.json"
+                "Asset Management & Custody Activities": "asset_management_custody.json",
 
                 # P&G Consumers metrics (patch)
+                "Apparel, Accessories & Footwear": "apparel_accessories_&_footwear.json",
+                "Household & Personal Products": "household_&_personal_products.json",
+                "Multiline and Specialty Retailers & Distributors": "multiline_and_specialty_retailers_&_distributors.json",
 
                 # BMW Transportation metrics (patch)
             }
