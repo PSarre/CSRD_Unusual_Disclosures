@@ -284,15 +284,23 @@ class MetricProcessor:
             # 行业名称到文件名的映射
             industry_file_mapping = {
                 "Software & IT Services": "software_&_it_services.json",
-                "Hardware": "Hardware.json", 
+                "Hardware": "Hardware.json",
                 "Semiconductors": "semiconductors.json",
                 "Internet Media & Services": "Internet_Media_and_Services.json",
                 "Telecommunication Services": "telecommunication_services.json",
                 "Electronic Manufacturing Services & Original Design Manufacturing": "Electronic_Manufacturing_Servic.json",
-                # MCG Financials metrics (now in sasb_metrics directory)
-                "Investment Banking & Brokerage": "investment_banking_brokerage.json",
-                "Commercial Banks": "commercial_banks.json",
-                "Asset Management & Custody Activities": "asset_management_custody.json"
+                # Financials
+                "Investment Banking & Brokerage": "Investment_Banking_and_Brokerage.json",
+                "Commercial Banks": "Commercial_Banks.json",
+                "Asset Management & Custody Activities": "Asset_Manage_and_Custody_Activity.json",
+                # Transportation
+                "Automobiles": "Automobiles.json",
+                "Auto Parts": "Auto_Parts.json",
+                "Car Rental & Leasing": "Car_Rental_and_Leasing.json",
+                # Consumer Goods
+                "Household & Personal Products": "Household_and_Personal_Products.json",
+                "Multiline and Specialty Retailers & Distributors": "Multiline_and_Specialty_Retaile.json",
+                "E-Commerce": "E-Commerce.json"
             }
             
             if semi_industry not in industry_file_mapping:
