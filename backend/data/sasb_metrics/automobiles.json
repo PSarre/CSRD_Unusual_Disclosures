@@ -1,0 +1,222 @@
+[
+  {
+    "Metric": "Percentage of vehicle models rated by NCAP with an overall 5-star safety rating, by region",
+    "Category": "Quantitative",
+    "Unit": "Percentage (%)",
+    "Code": "TR-AU-250a.1",
+    "Topic": "Product Safety",
+    "Type": "Disclosure Topics & Metrics",
+    "Value": null,
+    "Page": null,
+    "Context": null
+  },
+  {
+    "Metric": "Number of safety-related defect complaints",
+    "Category": "Quantitative",
+    "Unit": "Number",
+    "Code": "TR-AU-250a.2",
+    "Topic": "Product Safety",
+    "Type": "Disclosure Topics & Metrics",
+    "Value": null,
+    "Page": null,
+    "Context": null
+  },
+  {
+    "Metric": "Percentage of safety-related defect complaints investigated",
+    "Category": "Quantitative",
+    "Unit": "Percentage (%)",
+    "Code": "TR-AU-250a.2",
+    "Topic": "Product Safety",
+    "Type": "Disclosure Topics & Metrics",
+    "Value": null,
+    "Page": null,
+    "Context": null
+  },
+  {
+    "Metric": "Number of vehicles recalled",
+    "Category": "Quantitative",
+    "Unit": "Number",
+    "Code": "TR-AU-250a.3",
+    "Topic": "Product Safety",
+    "Type": "Disclosure Topics & Metrics",
+    "Value": null,
+    "Page": null,
+    "Context": null
+  },
+  {
+    "Metric": "Percentage of active workforce employed under collective agreements",
+    "Category": "Quantitative",
+    "Unit": "Percentage (%)",
+    "Code": "TR-AU-310a.1",
+    "Topic": "Labour Practices",
+    "Type": "Disclosure Topics & Metrics",
+    "Value": null,
+    "Page": null,
+    "Context": null
+  },
+  {
+    "Metric": "Number of work stoppages",
+    "Category": "Quantitative",
+    "Unit": "Number",
+    "Code": "TR-AU-310a.2",
+    "Topic": "Labour Practices",
+    "Type": "Disclosure Topics & Metrics",
+    "Value": null,
+    "Page": null,
+    "Context": null
+  },
+  {
+    "Metric": "Rotal days idle",
+    "Category": "Quantitative",
+    "Unit": "Days idle",
+    "Code": "TR-AU-310a.2",
+    "Topic": "Labour Practices",
+    "Type": "Disclosure Topics & Metrics",
+    "Value": null,
+    "Page": null,
+    "Context": null
+  },
+  {
+    "Metric": "Sales-weighted average passenger fleet fuel economy, by region",
+    "Category": "Quantitative",
+    "Unit": "Mpg, L/km, gCO\u2082/km, km/L",
+    "Code": "TR-AU-410a.1",
+    "Topic": "Fuel Economy & Use-phase Emissions",
+    "Type": "Disclosure Topics & Metrics",
+    "Value": null,
+    "Page": null,
+    "Context": null
+  },
+  {
+    "Metric": "Number of zero emission vehicles (ZEV)",
+    "Category": "Quantitative",
+    "Unit": "Number",
+    "Code": "TR-AU-410a.2",
+    "Topic": "Fuel Economy & Use-phase Emissions",
+    "Type": "Disclosure Topics & Metrics",
+    "Value": null,
+    "Page": null,
+    "Context": null
+  },
+  {
+    "Metric": "Number of hybrid vehicles",
+    "Category": "Quantitative",
+    "Unit": "Number",
+    "Code": "TR-AU-410a.2",
+    "Topic": "Fuel Economy & Use-phase Emissions",
+    "Type": "Disclosure Topics & Metrics",
+    "Value": null,
+    "Page": null,
+    "Context": null
+  },
+  {
+    "Metric": "Number of plug-in hybrid vehicles sold",
+    "Category": "Quantitative",
+    "Unit": "Number",
+    "Code": "TR-AU-410a.2",
+    "Topic": "Fuel Economy & Use-phase Emissions",
+    "Type": "Disclosure Topics & Metrics",
+    "Value": null,
+    "Page": null,
+    "Context": null
+  },
+  {
+    "Metric": "Discussion of strategy for managing fleet fuel economy and emissions risks and opportunities",
+    "Category": "Discussion and Analysis",
+    "Unit": null,
+    "Code": "TR-AU-410a.3",
+    "Topic": "Fuel Economy & Use-phase Emissions",
+    "Type": "Disclosure Topics & Metrics",
+    "Value": null,
+    "Page": null,
+    "Context": null
+  },
+  {
+    "Metric": "Description of the management of risks associated with the use of critical materials",
+    "Category": "Discussion and Analysis",
+    "Unit": null,
+    "Code": "TR-AU-440a.1",
+    "Topic": "Materials Sourcing",
+    "Type": "Disclosure Topics & Metrics",
+    "Value": null,
+    "Page": null,
+    "Context": null
+  },
+  {
+    "Metric": "Total amount of waste from manufacturing",
+    "Category": "Quantitative",
+    "Unit": "Metric tonnes (t)",
+    "Code": "TR-AU-440b.1",
+    "Topic": "Materials Efficiency & Recycling",
+    "Type": "Disclosure Topics & Metrics",
+    "Value": null,
+    "Page": null,
+    "Context": null
+  },
+  {
+    "Metric": "Percentage recycled of waste from manufacturing",
+    "Category": "Quantitative",
+    "Unit": "Percentage (%)",
+    "Code": "TR-AU-440b.1",
+    "Topic": "Materials Efficiency & Recycling",
+    "Type": "Disclosure Topics & Metrics",
+    "Value": null,
+    "Page": null,
+    "Context": null
+  },
+  {
+    "Metric": "Weight of end-of-life material recovered",
+    "Category": "Quantitative",
+    "Unit": "Metric tonnes (t)",
+    "Code": "TR-AU-440b.2",
+    "Topic": "Materials Efficiency & Recycling",
+    "Type": "Disclosure Topics & Metrics",
+    "Value": null,
+    "Page": null,
+    "Context": null
+  },
+  {
+    "Metric": "Percentage recycled of end-of-life material recovered",
+    "Category": "Quantitative",
+    "Unit": "Percentage (%)",
+    "Code": "TR-AU-440b.2",
+    "Topic": "Materials Efficiency & Recycling",
+    "Type": "Disclosure Topics & Metrics",
+    "Value": null,
+    "Page": null,
+    "Context": null
+  },
+  {
+    "Metric": "Average recyclability of vehicles sold",
+    "Category": "Quantitative",
+    "Unit": "Percentage (%) by sales- weighted metric tonnes (t)",
+    "Code": "TR-AU-440b.3",
+    "Topic": "Materials Efficiency & Recycling",
+    "Type": "Disclosure Topics & Metrics",
+    "Value": null,
+    "Page": null,
+    "Context": null
+  },
+  {
+    "Metric": "Number of vehicles manufactured",
+    "Category": "Quantitative",
+    "Unit": "Number",
+    "Code": "TR-AU-000.A",
+    "Topic": null,
+    "Type": "Activity Metrics",
+    "Value": null,
+    "Page": null,
+    "Context": null
+  },
+  {
+    "Metric": "Number of vehicles sold",
+    "Category": "Quantitative",
+    "Unit": "Number",
+    "Code": "TR-AU-000.B",
+    "Topic": null,
+    "Type": "Activity Metrics",
+    "Value": null,
+    "Page": null,
+    "Context": null
+  }
+]

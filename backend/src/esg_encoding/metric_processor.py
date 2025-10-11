@@ -293,6 +293,7 @@ class MetricProcessor:
                 "Investment Banking & Brokerage": "investment_banking_brokerage.json",
                 "Commercial Banks": "commercial_banks.json",
                 "Asset Management & Custody Activities": "asset_management_custody.json",
+                "E-Commerce": "e-commerce.json",
 
                 # P&G Consumers metrics (patch)
                 "Apparel, Accessories & Footwear": "apparel_accessories_&_footwear.json",
@@ -300,6 +301,9 @@ class MetricProcessor:
                 "Multiline and Specialty Retailers & Distributors": "multiline_and_specialty_retailers_&_distributors.json",
 
                 # BMW Transportation metrics (patch)
+                "Automobiles": "automobiles.json",
+                "Auto Parts": "auto_parts.json",
+                "Car Rental & Leasing": "car_rental_&_leasing.json",
             }
             
             if semi_industry not in industry_file_mapping:
