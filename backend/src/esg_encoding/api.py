@@ -215,8 +215,8 @@ async def upload_report(
                     metrics
                 )
                 
-                print("======== CHECK ALL METRICS ========")
-                print(metrics)
+                #print("======== CHECK ALL METRICS ========")
+                #print(metrics)
                 # Execute disclosure inference (classification)
                 disclosure_engine = system_components["disclosure_engine"]
                 assessment = disclosure_engine.analyze_compliance(

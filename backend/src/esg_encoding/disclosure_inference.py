@@ -79,8 +79,8 @@ class DisclosureInferenceEngine:
                 logger.info(f"Analyzing metric {i+1}/{len(all_metrics.metrics)}: {metric.metric_name}")
                 
                 # If retrieval results exist and matching content found, use retrieval analysis; otherwise mark as not disclosed
-                print("======== DEBUG METRIC STRUCTURE ========")
-                print(metric)
+                #print("======== DEBUG METRIC STRUCTURE ========")
+                #print(metric)
                 if metric.metric_id in retrieval_map:
                     retrieval_result = retrieval_map[metric.metric_id]
                     # Only perform LLM analysis when matching content is actually found
@@ -216,19 +216,43 @@ class DisclosureInferenceEngine:
         )
         
         try:
+            json_example = """
+            {
+              "metric_id": "CG-EC-130a.1",
+              "disclosure_status": "fully_disclosed",
+              "reasoning": "The report explicitly states the total energy consumption in GJ."
+            }
+            """
+
+            system_prompt = f"""
+            You are a professional ESG compliance analysis expert. Please analyze metric
+            disclosure status based on the provided information.
+
+            Respond ONLY with a JSON object in the following format. Do not include
+            any other text, explanations, or markdown backticks.
+
+            Example Format:
+            {json_example}
+            """
             # Call LLM for analysis
             response = self.llm_client.chat.completions.create(
                 model=self.config.llm_model,
-                response_format={"type": "json_object"},
+                #response_format={"type": "json_object"},
                 messages=[
-                    {"role": "system", "content": "You are a professional ESG compliance analysis expert. Please analyze metric disclosure status based on the provided information."},
-                    {"role": "user", "content": prompt}
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": prompt},
+                    {"role": "assistant", "content": "{"}   # Forces the model to start generating JSON
                 ],
                 temperature=1   # CHANGE TO 1 FOR GPT-5
             )
             
+            llm_output = "{" + response.choices[0].message.content
+            
+            print("======== DEBUG MESSAGE ========")
+            print(llm_output)
+            
             # Parse LLM response
-            llm_result = json.loads(response.choices[0].message.content)
+            llm_result = json.loads(llm_output)
 
             # Validate required fields from LLM
             if "reasoning" not in llm_result or not llm_result["reasoning"]:
